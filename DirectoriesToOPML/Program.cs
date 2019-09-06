@@ -21,9 +21,9 @@ namespace DirectoriesToOpml
                 _isRoot = false;
             }
             
-            FileSystemInfo[] subDirsAndFiles = dirInfo.GetFileSystemInfos();
+            FileSystemInfo[] subDirsAndFilesInfo = dirInfo.GetFileSystemInfos();
 
-            foreach (FileSystemInfo FSInfo in subDirsAndFiles)
+            foreach (FileSystemInfo FSInfo in subDirsAndFilesInfo)
             {
                 if (FSInfo is DirectoryInfo)
                 {
